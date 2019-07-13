@@ -74,6 +74,11 @@
 				<artifactId>maven-release-plugin</artifactId>
 
 				<configuration>
+					<checkModificationExcludes>
+
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+
+					</checkModificationExcludes>
 					<tagNameFormat>v@{project.version}</tagNameFormat>
 					<autoVersionSubmodules>true</autoVersionSubmodules>
 				</configuration>
